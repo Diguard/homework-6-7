@@ -350,6 +350,8 @@ textarea {
     border-radius: 2px;
     border: 2px solid var(--tittle-text-color);
     fill: transparent;
+
+    margin-top: -1px;
 }
 
 .checkbox:checked + .icon-checkbox {
