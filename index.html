@@ -63,11 +63,71 @@
                 <button type="button" class="hero-button" data-modal-open>Замовити послугу</button>
                 <div class="backdrop is-hidden" data-modal>
                     <div class="modal show">
-                        <button class="btn-close" data-modal-close>
-                            <svg class="btn-img">
-                                <use href="./images/main/sprite.svg#icon-btn-close"></use>
-                            </svg>
-                        </button>
+     <!-- Form -->
+
+                        <form class="form" autocomplete="off">
+                            <div class="form-tittle">
+                                <h2>Залиште свої дані, ми вам передзвонимо</h2>
+                            </div>
+                        
+                            <div class="form-field">
+                                <label for="name">
+                                    Ім'я
+                                </label>
+                                <input type="text" class="form-input" name="name" id="name">
+                                <svg class="icon-form">
+                                    <use href="./images/main/icon.svg#icon-person-black"></use>
+                                </svg>
+                            </div>
+            
+                            <div class="form-field">
+                                <label for="tel">
+                                    Телефон
+                                </label>
+                                <input type="tel" class="form-input" name="tel" id="tel">
+                                <svg class="icon-form">
+                                    <use href="./images/main/icon.svg#icon-phone-black"></use>
+                                </svg>
+                            </div>
+            
+                            <div class="form-field">
+                                <label for="email">
+                                    Пошта
+                                </label>
+                                <input type="email" class="form-input" name="email" id="email">
+                                <svg class="icon-form">
+                                    <use href="./images/main/icon.svg#icon-mail"></use>
+                                </svg>
+                            </div>
+            
+                            <div class="form-field form-comment">
+                                <label for="comment">
+                                    Коментар
+                                </label>
+                                <textarea name="comment" id="comment" placeholder="Введіть текст"></textarea>
+                            </div>
+            
+                            <div class="form-checkbox">  
+                            <label class="label-checkbox" for="agreement">
+                                <input class="checkbox" type="checkbox" name="agreement" id="agreement">
+
+                                <svg class="icon-checkbox">
+                                    <use href="./images/main/icon.svg#icon-check"></use>
+                                </svg>
+
+                                Погоджуюся з розсилкою та приймаю
+                                
+                                <a href="" class="contract-link">Умови договору</a></label>
+                            </div>
+        
+                            <button type="submit" class="btn-submit">Відправити</button>
+
+                            <button class="btn-close" data-modal-close>
+                                <svg class="btn-img">
+                                    <use href="./images/main/icon.svg#icon-close-black"></use>
+                                </svg>
+                            </button>
+                    </form>
                     </div>
                 </div>
             </div>
@@ -437,6 +497,20 @@
                 </li>
             </ul>
         </div>
+        <form class="footer-form">
+            <h2 class="footer-form-tittle">Підпишіться на розсилку</h2>
+
+            <div class="form-box">
+                <input type="email" name="email" placeholder="E-mail">
+                <button type="submit" class="btn-subscribe">
+                    Підписатися
+                    <svg class="icon-subscribe">
+                        <use href="./images/main/sprite.svg#icon-telegram"></use>
+                    </svg>
+                </button>
+            </div>
+        </form>
+        
        </div>
         
     </footer>
